@@ -1,20 +1,23 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int a,b,c;
-    scanf("%d %d %d", &a,&b,&c);
-    int d;
-    int rest;
-    if (b%c == 0){
-        d = c/b;
+    double a,b,c;
+    scanf("%lf %lf %lf", &a,&b,&c);
+    double x1,x2;
+    if(b*b - 4*a*c == 0){
+        printf("x1=x2=%5.5f", (-b+sqrt(b*b-4*a*c))/(2*a));
+    } else if (b*b - 4*a*c > 0){
+        if ((-b+sqrt(b*b-4*a*c))/(2*a) >= (-b-sqrt(b*b-4*a*c))/(2*a)){
+            x1 = (-b+sqrt(b*b-4*a*c))/(2*a);
+            x2 = (-b-sqrt(b*b-4*a*c))/(2*a);
+        } else{
+            x1 = (-b-sqrt(b*b-4*a*c))/(2*a);
+            x2 = (-b+sqrt(b*b-4*a*c))/(2*a);
+        }
+        printf("x1=%5.5f;x2=%5.5f",x2,x1);
     } else{
-        d = c/b+1;
+        printf("No answer!");
     }
-    if (d < a){
-        rest = a - d;
-    } else{
-        rest = 0;
-    }
-    printf("%d", rest);
     return 0;
 }
