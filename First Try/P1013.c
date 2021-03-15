@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    double pi = 3.14159;
+    double pi = 3.141592;
     int total = 20000;
     int need;
     int h,r;
