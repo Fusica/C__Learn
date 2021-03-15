@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/**
+ * 有问题，没有完全考虑，或者这个思路根本行不通
+ */
+
 
 bool canPlaceFlowers(vector<int>& flowerbed, int n) {
     int count = 0;
