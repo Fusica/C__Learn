@@ -33,3 +33,6 @@ add_executable(P1031 3.17/P1031.cpp)
 
 add_executable(P1032 3.17/P1032.cpp)
 add_executable(P1033 3.17/P1033.cpp)
+add_executable(P1035 3.18/P1035.cpp)
+add_executable(P1036 3.18/P1036.cpp)
+add_executable(P1037 3.18/P1037.cpp)
